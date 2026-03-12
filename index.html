@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palasmotiv — Automated Short Video Creation</title>
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #5A52D5;
+            --bg: #FAFAFA;
+            --text: #1A1A2E;
+            --text-light: #555;
+            --card-bg: #FFFFFF;
+            --border: #E8E8E8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+        nav .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); }
+        nav .links a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        nav .links a:hover { color: var(--primary); }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem 4rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+        .hero h1 span { color: var(--primary); }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            max-width: 540px;
+            margin: 0 auto 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        .card h3 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .card p { color: var(--text-light); font-size: 0.95rem; }
+
+        .pipeline {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+            text-align: center;
+        }
+        .pipeline h2 { font-size: 1.75rem; margin-bottom: 2rem; }
+        .steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+        }
+        .step {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1.25rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .arrow { color: var(--primary); font-size: 1.25rem; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Palasmotiv</div>
+        <div class="links">
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Automated <span>Short Video</span> Creation</h1>
+        <p>Palasmotiv discovers trending content, transforms it into engaging short-form videos, and publishes across YouTube Shorts, TikTok, and Instagram Reels — automatically.</p>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Trend Discovery</h3>
+            <p>Automatically identifies trending topics and viral content across platforms to find what resonates with audiences.</p>
+        </div>
+        <div class="card">
+            <h3>Smart Transformation</h3>
+            <p>AI-powered video editing: splitting, cropping, captioning, and optimizing content for short-form formats.</p>
+        </div>
+        <div class="card">
+            <h3>Multi-Platform Publishing</h3>
+            <p>One-click publishing to YouTube Shorts, TikTok, and Instagram Reels with platform-specific optimizations.</p>
+        </div>
+    </section>
+
+    <section class="pipeline">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">Discover</div>
+            <span class="arrow">→</span>
+            <div class="step">Download</div>
+            <span class="arrow">→</span>
+            <div class="step">Transform</div>
+            <span class="arrow">→</span>
+            <div class="step">Publish</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Palasmotiv. All rights reserved.</p>
+        <p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
